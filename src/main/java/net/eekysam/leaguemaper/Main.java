@@ -36,9 +36,9 @@ public class Main
 		{
 			NVRMaterial mat = nvr.materials[i];
 			String matname = String.copyValueOf(mat.name).trim();
-			File fs = new File(i + " " + matname + " simp.obj");
+			File fs = new File(i + " " + " simp.obj");
 			fs.createNewFile();
-			File fc = new File(i + " " + matname + " comp.obj");
+			File fc = new File(i + " " + " comp.obj");
 			fc.createNewFile();
 			prints[i] = new PrintStream[] { new PrintStream(fc), new PrintStream(fs) };
 			lastpercent = percentUpdate(1, 2, i, nvr.materialCount, lastpercent, 10.0F);
