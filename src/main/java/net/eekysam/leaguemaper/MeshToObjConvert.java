@@ -81,7 +81,7 @@ public class MeshToObjConvert
 	private void convertVertex(NVRVertexSimple vert, float scale)
 	{
 		String s = "v";
-		vert.position[0] *= -1;
+		//vert.position[0] *= -1;
 		for (int i = 0; i < 3; i++)
 		{
 			s += " " + (vert.position[i] * scale);
